@@ -1,0 +1,29 @@
+dotyczy MySQL:
+
+CREATE DATABASE home;
+
+CREATE TABLE home_budget (
+id INT auto_increment PRIMARY KEY,
+type VARCHAR(50) NOT NULL,
+description VARCHAR(50),
+amount DECIMAL(7,2) NOT NULL,
+date DATE NOT NULL
+);
+
+
+
+
+#przykładowe dane:
+INSERT INTO home_budget
+SET
+type = 'przychód',
+description = 'premia',
+amount = 1280.54,
+date = '2018-04-07';
+
+INSERT INTO home_budget
+SET
+type = 'wydatek',
+description = 'rachunek za prąd',
+amount = 145.99,
+date = '2018-04-27';
